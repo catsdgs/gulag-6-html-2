@@ -2054,3 +2054,6 @@ img.gb_ua {
 		background-image: url(https://lh3.googleusercontent.com/ogw/default-user=s96)
 	}
 }
+*, *:before, *:after {
+  box-sizing: content-box;
+}
