@@ -4,6 +4,7 @@ body {
 		background-color: #16b5f9;
     background-size: 100% 100%;
 		font-family: 'Raleway', sans-serif;
+		color: #fff;
 }
 #header-text {
 	color: #fff;
@@ -222,4 +223,7 @@ input:-ms-input-placeholder {
 }
 input:focus:-ms-input-placeholder {
     color: #2cbcae;
+}
+.waitTxt {
+text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
 }
