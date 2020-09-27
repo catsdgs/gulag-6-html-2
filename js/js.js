@@ -48,6 +48,8 @@ function option4() {
 }
 
 function search() {
+  $('#mainForm').attr('action', 'https://startpage.com/sp/search');
+  $('#mainForm').attr('method', 'POST');
   document.getElementById('mainForm').submit();
 }
 //
