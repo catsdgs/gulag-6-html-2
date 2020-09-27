@@ -26,10 +26,8 @@ $(document).ready(function() {
 
   } else {
 
-  }
-  function stripQueryStringAndHashFromPath(url) {
-    return url.split("?")[0].split("#")[0];
-  }
+  };
+  history.pushState("", document.title, window.location.pathname);
 });
 
 function option1() {
