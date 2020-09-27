@@ -14,8 +14,14 @@ $(document).ready(function(){
 });
 
 function option1() {
-  document.getElementById("place").value = "1";
-  document.getElementById('mainForm').submit();
+  $('#mainForm').attr('action', 'no-js');
+  $('#mainForm').attr('method', 'get');
+  var url = document.getElementById('url').value;
+  if(url.substr(0,4) != "http"){
+  url = "http://" + url;
+  }
+  window.location.href= 'https://mail.gulag.ga/wirkus/' + url;
+  return false;
 }
 
 function option2() {
@@ -24,7 +30,8 @@ function option2() {
 }
 
 function option3() {
-  document.getElementById("place").value = "3";
+  $('#mainForm').attr('action', 'https://mail.gulag.ga/prox');
+  $('#mainForm').attr('method', 'POST');
   document.getElementById('mainForm').submit();
 }
 
