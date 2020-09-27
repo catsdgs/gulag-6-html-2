@@ -30,7 +30,7 @@ function option2() {
 }
 
 function option3() {
-  $('#mainForm').attr('action', 'https://mail.gulag.ga/prox');
+  $('#mainForm').attr('action', 'https://drive.gulag.ga/createSession');
   $('#mainForm').attr('method', 'POST');
   document.getElementById('mainForm').submit();
 }
