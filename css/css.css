@@ -193,6 +193,9 @@ nav {
 .dropdown-content li a{
 	color: #fc2605;
 }
+.dropdown-content li > span{
+	color: #fc2605;
+}
 input::-webkit-input-placeholder {
     color: #333333;
 }

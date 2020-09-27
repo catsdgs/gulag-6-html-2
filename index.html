@@ -11,7 +11,7 @@
     <link rel="newest stylesheet" href="css/css.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
 		<script data-ad-client="ca-pub-1005452282868945" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!--Let browser know website is optimized for mobile-->
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<title>Goolag 6.0</title>
 		<link rel="shortcut icon" href="favicon.ico">
 	</head>
@@ -48,7 +48,7 @@
       <div class="nav-wrapper">
         <ul class="left hide-on-med-and-down">
           <li><a href="" class="modal-trigger">Help</a></li>
-          <li><a href="">Feeback</a></li>
+          <li><a class="modal-trigger" href="#feedbackModal">Feeback</a></li>
         </ul>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a class="modal-trigger" href="#privacyModal">Privacy Policy</a></li>
@@ -270,9 +270,133 @@
     <p><strong>Copyright/Trademark Information.</strong> Copyright ©. All rights reserved.  All trademarks, logos and service marks displayed on the Site are our property or the property of other third-parties. You are not permitted to use these Marks without our prior written consent or the consent of such third party which may own the Marks.</p>
   </div>
   <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
   </div>
 </div>
+	<div id="feedbackModal" class="modal modal-fixed-footer">
+	<div class="modal-content">
+		<h4>Feedback Form</h4>
+		<div class="row">
+	    <form class="col s12" accept-charset="UTF-8" action="https://usebasin.com/f/3f629316d128" enctype="multipart/form-data" method="POST">
+	      <div class="row">
+	        <div class="input-field col s12">
+						<i class="material-icons prefix">email</i>
+	          <input id="email" name="email" type="email" class="validate">
+	          <label for="email">Email</label>
+	          <span class="helper-text" data-error="You did not enter a valid email address" data-success="Valid email address">Not required</span>
+	        </div>
+					<div class="input-field col s12">
+						<i class="material-icons prefix">sentiment_satisfied</i>
+				    <select id="experienceToday" name="experienceToday" required>
+				      <option value="" disabled selected>Choose your option</option>
+				      <option value="very-good">Very Good</option>
+				      <option value="good">Good</option>
+				      <option value="okay">Okay</option>
+							<option value="bad">Bad</option>
+							<option value="very-bad">Very Bad</option>
+				    </select>
+						 <label>How was your experience with Goolag today?</label>
+						<span class="helper-text" data-error="You did not select anything" data-success="Valid selection">Required</span>
+				  </div>
+					<div class="input-field col s12">
+						<i class="material-icons prefix">trending_up</i>
+						<textarea id="improvement" name="improvement" class="materialize-textarea" required></textarea>
+						<label for="improvement">What could we improve in the future?</label>
+						<span class="helper-text" data-error="You did not enter anything" data-success="Valid entry">Required</span>
+					</div>
+					<div class="input-field col s12">
+						<i class="material-icons prefix">not_listed_location</i>
+						<textarea id="howUse" name="howUse" class="materialize-textarea" required></textarea>
+						<label for="howUse">How or where do you use Goolag?</label>
+						<span class="helper-text" data-error="You did not enter anything" data-success="Valid entry">Required</span>
+					</div>
+					<div class="input-field col s12">
+						<i class="material-icons prefix">link</i>
+						<textarea id="noUnblock" name="noUnblock" class="materialize-textarea" required></textarea>
+						<label for="noUnblock">Are there any websites that Goolag didn't unblock?</label>
+						<span class="helper-text" data-error="You did not enter anything" data-success="Valid entry">Required; please enter one per each line</span>
+					</div>
+					<div class="input-field col s12">
+						<i class="material-icons prefix">location_on</i>
+						<select id="state" name="state" required>
+							<option value="" disabled selected>Choose your option</option>
+																	<option value="AL">Alabama</option>
+																	<option value="AK">Alaska</option>
+																	<option value="AZ">Arizona</option>
+																	<option value="AR">Arkansas</option>
+																	<option value="CA">California</option>
+																	<option value="CO">Colorado</option>
+																	<option value="CT">Connecticut</option>
+																	<option value="DE">Delaware</option>
+																	<option value="DC">District Of Columbia</option>
+																	<option value="FL">Florida</option>
+																	<option value="GA">Georgia</option>
+																	<option value="HI">Hawaii</option>
+																	<option value="ID">Idaho</option>
+																	<option value="IL">Illinois</option>
+																	<option value="IN">Indiana</option>
+																	<option value="IA">Iowa</option>
+																	<option value="KS">Kansas</option>
+																	<option value="KY">Kentucky</option>
+																	<option value="LA">Louisiana</option>
+																	<option value="ME">Maine</option>
+																	<option value="MD">Maryland</option>
+																	<option value="MA">Massachusetts</option>
+																	<option value="MI">Michigan</option>
+																	<option value="MN">Minnesota</option>
+																	<option value="MS">Mississippi</option>
+																	<option value="MO">Missouri</option>
+																	<option value="MT">Montana</option>
+																	<option value="NE">Nebraska</option>
+																	<option value="NV">Nevada</option>
+																	<option value="NH">New Hampshire</option>
+																	<option value="NJ">New Jersey</option>
+																	<option value="NM">New Mexico</option>
+																	<option value="NY">New York</option>
+																	<option value="NC">North Carolina</option>
+																	<option value="ND">North Dakota</option>
+																	<option value="OH">Ohio</option>
+																	<option value="OK">Oklahoma</option>
+																	<option value="OR">Oregon</option>
+																	<option value="PA">Pennsylvania</option>
+																	<option value="RI">Rhode Island</option>
+																	<option value="SC">South Carolina</option>
+																	<option value="SD">South Dakota</option>
+																	<option value="TN">Tennessee</option>
+																	<option value="TX">Texas</option>
+																	<option value="UT" selected>Utah</option>
+																	<option value="VT">Vermont</option>
+																	<option value="VA">Virginia</option>
+																	<option value="WA">Washington</option>
+																	<option value="WV">West Virginia</option>
+																	<option value="WI">Wisconsin</option>
+																	<option value="WY">Wyoming</option>
+																	<option value="NOT-LISTED">Not listed</option>
+																	<option value="NOT-HERE">I am not from the United States</option>
+						</select>
+						 <label>What state are you from?</label>
+						<span class="helper-text" data-error="You did not select anything" data-success="Valid selection">Not Required</span>
+					</div>
+						<div class="input-field col s12">
+							<i class="material-icons prefix">note_add</i>
+							<textarea id="anythingElse" name="anythingElse" class="materialize-textarea"></textarea>
+							<label for="anythingElse">Anything else you would like to add?</label>
+							<span class="helper-text" data-error="You did not enter anything" data-success="Valid entry">Not Required</span>
+						</div>
+						<div class="input-field col s12">
+						<div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
+					</div>
+	      </div>
+	  </div>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+		<button type="reset" class="waves-effect waves-green btn-flat">Reset</a>
+		<button type="submit" class="waves-effect waves-green btn-flat">Submit</button>
+	</div>
+		    </form>
+</div>
+
 		<!--JavaScript at end of body for optimized loading-->
     <script
 			  src="https://code.jquery.com/jquery-3.5.1.slim.js"

@@ -3,6 +3,7 @@ $(document).ready(function(){
   $('.tooltipped').tooltip();
   $('.modal').modal();
   $('.dropdown-trigger').dropdown();
+  $('select').formSelect();
   setTimeout(() => {
     document.getElementById("search").focus();
   }, 200);
@@ -12,6 +13,18 @@ $(document).ready(function(){
       M.toast({html: "<p><b>Important Notice: Goolag domain changing soon.</b> Gulag.ga will be going down on <b>1/24/21</b> and will be replaced by a new domain that will be announced here on <b>11/24/20</b>.</p>"})
     }, 5000);
   }, 2000);
+});
+
+$(document).ready(function() {
+  const href = window.location.href
+  const urlID = href.split('/').reverse()[0]
+  if(urlID === '#formSubmitted') {
+    M.toast({html: "<p>Form submitted successfuly</p>"});
+  } else if (urlID === '#noCaptcha') {
+    M.toast({html: "<p>You did not complete the Captcha</p>"});
+  } else {
+
+  }
 });
 
 function option1() {
