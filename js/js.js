@@ -108,6 +108,36 @@ function searchIt() {
 }
 }
 
+function translate() {
+  var url = document.getElementById('url').value
+  if (url === '') {
+    M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+  } else {
+    showFrame();
+    setTimeout(() => {
+      if (url.substr(0, 4) != "http") {
+        url = "http://" + url;
+      }
+      window.location.href = 'https://translate.google.ca/translate?sl=auto&tl=en&u=' + url;
+      return false;
+    }, wait);
+}
+}
+
+function otherSearchIt() {
+  var url = document.getElementById('url').value
+  if (url === '') {
+    M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+  } else {
+    showFrame();
+    setTimeout(() => {
+      $('#mainForm').attr('action', 'no-js');
+      $('#mainForm').attr('method', 'get');
+      window.location.href= 'https://duckduckgo.com/?q=' + url;
+    }, wait);
+}
+}
+
 function showFrame() {
     var ifrm = document.createElement("iframe");
     ifrm.setAttribute("src", "submit.html");
