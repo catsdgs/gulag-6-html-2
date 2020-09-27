@@ -48,9 +48,10 @@ function option4() {
 }
 
 function search() {
-  $('#mainForm').attr('action', 'https://startpage.com/sp/search');
-  $('#mainForm').attr('method', 'POST');
-  document.getElementById('mainForm').submit();
+  $('#mainForm').attr('action', 'no-js');
+  $('#mainForm').attr('method', 'get');
+  var url = document.getElementById('url').value;
+  window.location.href= 'https://www.startpage.com/do/dsearch?query=' + url;
 }
 //
 // function other() {
