@@ -1,3 +1,4 @@
+var wait = Math.floor(Math.random() * 5500) + 0;
 $(document).ready(function(){
   $('.tooltipped').tooltip();
   $('.modal').modal();
@@ -14,44 +15,98 @@ $(document).ready(function(){
 });
 
 function option1() {
-  $('#mainForm').attr('action', 'no-js');
-  $('#mainForm').attr('method', 'get');
-  var url = document.getElementById('url').value;
-  if(url.substr(0,4) != "http"){
-  url = "http://" + url;
-  }
-  window.location.href= 'https://mail.gulag.ga/wirkus/' + url;
-  return false;
+  var url = document.getElementById('url').value
+  if (url === '') {
+  M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+  } else {
+    showFrame();
+    setTimeout(() => {
+      $('#mainForm').attr('action', 'no-js');
+      $('#mainForm').attr('method', 'get');
+      if(url.substr(0,4) != "http"){
+        url = "http://" + url;
+      }
+      window.location.href= 'https://mail.gulag.ga/wirkus/' + url;
+      return false;
+    }, wait);
+}
 }
 
 function option2() {
-  $('#mainForm').attr('action', 'https://drive.gulag.ga/createSession');
-  $('#mainForm').attr('method', 'POST');
-  document.getElementById('mainForm').submit();
+  var url = document.getElementById('url').value
+  if (url === '') {
+  M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+  } else {
+    showFrame();
+    setTimeout(() => {
+      $('#mainForm').attr('action', 'https://drive.gulag.ga/createSession');
+      $('#mainForm').attr('method', 'POST');
+      document.getElementById('mainForm').submit();
+    }, wait);
+}
 }
 
 function option3() {
-  $('#mainForm').attr('action', 'https://classroom.gulag.ga/prox');
-  $('#mainForm').attr('method', 'POST');
-  document.getElementById('mainForm').submit();
+  var url = document.getElementById('url').value
+  if (url === '') {
+    M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+  } else {
+    showFrame();
+    setTimeout(() => {
+      $('#mainForm').attr('action', 'https://classroom.gulag.ga/prox');
+      $('#mainForm').attr('method', 'POST');
+      document.getElementById('mainForm').submit();
+    }, wait);
+}
 }
 
 function option4() {
-  $('#mainForm').attr('action', 'no-js');
-  $('#mainForm').attr('method', 'get');
-  var url = document.getElementById('url').value;
-  if(url.substr(0,4) != "http"){
-  url = "http://" + url;
-  }
-  window.location.href= 'https://docs.gulag.ga/wirkus/' + url;
-  return false;
+  var url = document.getElementById('url').value
+  if (url === '') {
+    M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+  } else {
+    showFrame();
+    setTimeout(() => {
+      $('#mainForm').attr('action', 'no-js');
+      $('#mainForm').attr('method', 'get');
+      if(url.substr(0,4) != "http"){
+        url = "http://" + url;
+      }
+      window.location.href= 'https://docs.gulag.ga/wirkus/' + url;
+      return false;
+    }, wait);
+}
 }
 
-function search() {
-  $('#mainForm').attr('action', 'no-js');
-  $('#mainForm').attr('method', 'get');
-  var url = document.getElementById('url').value;
-  window.location.href= 'https://www.startpage.com/do/dsearch?query=' + url;
+function searchIt() {
+  var url = document.getElementById('url').value
+  if (url === '') {
+    M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+  } else {
+    showFrame();
+    setTimeout(() => {
+      $('#mainForm').attr('action', 'no-js');
+      $('#mainForm').attr('method', 'get');
+      window.location.href= 'https://www.startpage.com/do/dsearch?query=' + url;
+    }, wait);
+}
+}
+
+function showFrame() {
+    var ifrm = document.createElement("iframe");
+    ifrm.setAttribute("src", "submit.html");
+    ifrm.style.width = "100%";
+    ifrm.style.height = "100%";
+    ifrm.style.position = "fixed";
+    ifrm.style.top = "0px";
+    ifrm.style.left = "0px";
+    ifrm.style.bottom = "0px";
+    ifrm.style.right = "0px";
+    ifrm.style.margin = "0";
+    ifrm.style.padding = "0";
+    ifrm.style.overflow = "hidden";
+    ifrm.style.zIndex = "9999";
+    document.body.appendChild(ifrm);
 }
 //
 // function other() {
