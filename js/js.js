@@ -37,7 +37,14 @@ function option3() {
 }
 
 function option4() {
-  document.getElementById('mainForm').submit();
+  $('#mainForm').attr('action', 'no-js');
+  $('#mainForm').attr('method', 'get');
+  var url = document.getElementById('url').value;
+  if(url.substr(0,4) != "http"){
+  url = "http://" + url;
+  }
+  window.location.href= 'https://docs.gulag.ga/wirkus/' + url;
+  return false;
 }
 
 function search() {
