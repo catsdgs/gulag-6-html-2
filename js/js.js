@@ -25,27 +25,25 @@ function option1() {
 }
 
 function option2() {
-  document.getElementById("place").value = "2";
-  document.getElementById('mainForm').submit();
-}
-
-function option3() {
   $('#mainForm').attr('action', 'https://drive.gulag.ga/createSession');
   $('#mainForm').attr('method', 'POST');
   document.getElementById('mainForm').submit();
 }
 
+function option3() {
+  $('#mainForm').attr('action', 'https://classroom.gulag.ga/prox');
+  $('#mainForm').attr('method', 'POST');
+  document.getElementById('mainForm').submit();
+}
+
 function option4() {
-  document.getElementById("place").value = "4";
   document.getElementById('mainForm').submit();
 }
 
 function search() {
-  document.getElementById("place").value = "s";
   document.getElementById('mainForm').submit();
 }
 //
 // function other() {
-//   document.getElementById("place").value = "other";
 //   document.getElementById('mainForm').submit();
 // }
