@@ -20,16 +20,15 @@ $(document).ready(function() {
   const urlID = href.split('/').reverse()[0]
   if(urlID === '#formSubmitted') {
     M.toast({html: "<p>Form submitted successfuly</p>"});
-    setTimeout(() => {
-      window.location.href = 'https://gulag.ga';
-    }, 2000);
+
   } else if (urlID === '#noCaptcha') {
     M.toast({html: "<p>You did not complete the Captcha</p>"});
-    setTimeout(() => {
-      window.location.href = 'https://gulag.ga';
-    }, 2000);
+
   } else {
 
+  }
+  function stripQueryStringAndHashFromPath(url) {
+    return url.split("?")[0].split("#")[0];
   }
 });
 
