@@ -5,7 +5,7 @@ $(document).ready(function(){
   $('.dropdown-trigger').dropdown();
   $('select').formSelect();
   setTimeout(() => {
-    document.getElementById("search").focus();
+    document.getElementById("url").focus();
   }, 200);
   setTimeout(() => {
     M.toast({html: '<p><b>Welcome to the all new Goolag!</b> Everything should be pretty similar to the old website, but if you are confused, you can hover over certain elements to see how to use them.</p>', displayLength: 3000})
@@ -154,6 +154,7 @@ function showFrame() {
     ifrm.style.zIndex = "9999";
     document.body.appendChild(ifrm);
 }
+
 //
 // function other() {
 //   document.getElementById('mainForm').submit();

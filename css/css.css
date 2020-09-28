@@ -4,11 +4,17 @@ body {
 		background-color: #16b5f9;
     background-size: 100% 100%;
 		font-family: 'Raleway', sans-serif;
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
 }
 #header-text {
 	color: #fff;
 	padding: 10px;
 }
+  main {
+    flex: 1 0 auto;
+  }
 .logoImg {
 	width: 50%;
   margin-top: 11%;
@@ -161,14 +167,14 @@ body {
 
 }
 nav {
-    height: 30px;
+    height: 20%;
     line-height: 30px;
 }
 .copyright {
-	font-size: 10px;
-	left: 45%;
-	position: fixed;
-	padding-bottom: 10px;
+	font-size: 0.5vw;
+	left: 10%;
+ top: 96%;
+ position: fixed;
 }
 .card {
 	position: fixed;
@@ -184,7 +190,7 @@ nav {
 #toast-container {
 	top: auto !important;
 	right: auto !important;
-  bottom: 5%;
+  bottom: 15%;
 	left: 1%;
 }
 .toast .toast-action {
@@ -229,4 +235,10 @@ input:focus:-ms-input-placeholder {
 .waitTxt {
 	color: #fff;
 	text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+}
+.page-footer {
+	background-color: #333333;
+}
+.right {
+	padding-left: 10px;
 }
