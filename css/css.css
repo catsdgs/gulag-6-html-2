@@ -238,7 +238,21 @@ input:focus:-ms-input-placeholder {
 }
 .page-footer {
 	background-color: #333333;
+	padding-top: 0px;
 }
 .right {
 	padding-left: 10px;
+}
+.page-footer {
+	background-color: #333333;
+	padding-top: 0px;
+}
+.row {
+	margin-bottom: 0px;
+}
+
+.row p{
+	margin-bottom: 0px;
+	margin-left: 1%;
+	margin-right: 1%;
 }
