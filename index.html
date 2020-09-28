@@ -19,9 +19,6 @@
   var userip;
 </script>
 <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
-<script type="text/javascript">
-  document.write("Your IP is :", userip);
-</script>
 		<title>Goolag 6.0</title>
 		<link rel="shortcut icon" href="favicon.ico">
 	</head>
@@ -60,7 +57,7 @@
 						<div class="center-align">
             <div class="row">
               <div class="col l offset-l s12">
-								<p class="grey-text text-lighten-3" href="#!"><b><i>Section 230 of the Communications Decency Act says that we are not liable for anything that you do on this website.</i></b> Your IP (<span id="ipaddress"></span>) is being logged.</p>
+								<p class="grey-text text-lighten-3" href="#!"><b><i>Section 230 of the Communications Decency Act says that we are not liable for anything that you do on this website.</i></b> Your IP (<span id="ipaddress"></span>) is being logged and can be traced in the future.</p>
               </div>
             </div>
 					</div>
@@ -522,6 +519,8 @@
 			}
 		}
 		</script>
-		<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+		<script type="text/javascript">
+		  document.getElementById("ipaddress").innerHTML = userip;
+		</script>
 	</body>
 </html>
