@@ -7,12 +7,9 @@ $(document).ready(function(){
   setTimeout(() => {
     document.getElementById("url").focus();
   }, 200);
-  // setTimeout(() => {
-  //   M.toast({html: '<p><b>Welcome to the all new Goolag!</b> Everything should be pretty similar to the old website, but if you are confused, you can hover over certain elements to see how to use them.</p>', displayLength: 3000})
-  //   setTimeout(() => {
-  //     M.toast({html: "<p><b>Important Notice: Goolag domain changing soon.</b> Gulag.ga will be going down on <b>1/24/21</b> and will be replaced by a new domain that will be announced here on <b>11/24/20</b>.</p>"})
-  //   }, 5000);
-  // }, 2000);
+  setTimeout(() => {
+     M.toast({html: "<p><b>Important Notice: Goolag domain changing soon.</b> Gulag.ga will be going down on <b>1/24/21</b> and will be replaced by a new domain that will be announced here on <b>11/24/20</b>.</p>"})
+  }, 2000);
 });
 
 $(document).ready(function() {
@@ -22,10 +19,10 @@ $(document).ready(function() {
     M.toast({html: "<p>Form submitted successfuly</p>"});
 
   } else if (urlID === '#noCaptcha') {
-    M.toast({html: "<p>You did not complete the Captcha</p>"});
+    M.toast({html: "<p><b>Error: </b>You did not complete the Captcha</p>"});
 
-  } else {
-
+  } else if (urlID.indexOf("url=") >= 0){
+    M.toast({html: '<p><b>Error: </b>You need to select an option and not use enter. In the future, you can to Tab + Enter to unblock quicker.</p>'});
   };
   history.pushState("", document.title, window.location.pathname);
 });
@@ -159,56 +156,3 @@ function showFrame() {
 // function other() {
 //   document.getElementById('mainForm').submit();
 // }
-
-//Pop-under window- By JavaScript Kit
-//Credit notice must stay intact for use
-//Visit http://javascriptkit.com for this script
-
-//specify page to pop-under
-var popunder="https://www.purevpn.com/order-now.php?aff=44637&amp;a_bid=920607c7"
-
-//specify popunder window features
-//set 1 to enable a particular feature, 0 to disable
-var winfeatures="width=800,height=510,scrollbars=1,resizable=1,toolbar=1,location=1,menubar=1,status=1,directories=0"
-
-//Pop-under only once per browser session? (0=no, 1=yes)
-//Specifying 0 will cause popunder to load every time page is loaded
-var once_per_session=0
-
-///No editing beyond here required/////
-
-function get_cookie(Name) {
-  var search = Name + "="
-  var returnvalue = "";
-  if (document.cookie.length > 0) {
-    offset = document.cookie.indexOf(search)
-    if (offset != -1) { // if cookie exists
-      offset += search.length
-      // set index of beginning of value
-      end = document.cookie.indexOf(";", offset);
-      // set index of end of cookie value
-      if (end == -1)
-         end = document.cookie.length;
-      returnvalue=unescape(document.cookie.substring(offset, end))
-      }
-   }
-  return returnvalue;
-}
-
-function loadornot(){
-if (get_cookie('popunder')==''){
-loadpopunder()
-document.cookie="popunder=yes"
-}
-}
-
-function loadpopunder(){
-win2=window.open(popunder,"",winfeatures)
-win2.blur()
-window.focus()
-}
-
-if (once_per_session==0)
-loadpopunder()
-else
-loadornot()
