@@ -8,7 +8,7 @@ $(document).ready(function(){
     document.getElementById("url").focus();
   }, 200);
   setTimeout(() => {
-     M.toast({html: "<p><b>Very Important Notice: Goolag domain changing soon.</b> Gulag.ga will be going down on <b>1/24/21</b> and will be replaced by <i><a href='https://goolag.app'>goolag.app</a></i></b>.</p>"})
+     M.toast({html: "<p>Welcome to the new website! All subdomains have also changed, so if you had any bookmarks for specific websites those will no longer work and will have to be changed</p>"})
   }, 1000);
 });
 
