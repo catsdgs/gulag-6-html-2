@@ -9,7 +9,7 @@ $(document).ready(function(){
   }, 200);
   setTimeout(() => {
      M.toast({html: "<p><b>Very Important Notice: Goolag domain changing soon.</b> Gulag.ga will be going down on <b>1/24/21</b> and will be replaced by <i><a href='https://goolag.app'>goolag.app</a></i></b>.</p>"})
-  }, 2000);
+  }, 1000);
 });
 
 $(document).ready(function() {
