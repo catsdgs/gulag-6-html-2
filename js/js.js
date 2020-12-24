@@ -39,7 +39,7 @@ function option1() {
       if(url.substr(0,4) != "http"){
         url = "http://" + url;
       }
-      window.location.href= 'https://mail.gulag.ga/wirkus/' + url;
+      window.location.href= 'https://option1.goolag.app/wirkus/' + url;
       return false;
     }, wait);
 }
@@ -52,7 +52,7 @@ function option2() {
   } else {
     showFrame();
     setTimeout(() => {
-      $('#mainForm').attr('action', 'https://drive.gulag.ga/createSession');
+      $('#mainForm').attr('action', 'https://option2.goolag.app/createSession');
       $('#mainForm').attr('method', 'POST');
       document.getElementById('mainForm').submit();
     }, wait);
@@ -66,7 +66,7 @@ function option3() {
   } else {
     showFrame();
     setTimeout(() => {
-      $('#mainForm').attr('action', 'https://classroom.gulag.ga/prox');
+      $('#mainForm').attr('action', 'https://option3.goolag.app/prox');
       $('#mainForm').attr('method', 'POST');
       document.getElementById('mainForm').submit();
     }, wait);
@@ -85,7 +85,7 @@ function option4() {
       if(url.substr(0,4) != "http"){
         url = "http://" + url;
       }
-      window.location.href= 'https://docs.gulag.ga/wirkus/' + url;
+      window.location.href= 'https://option4.goolag.app/wirkus/' + url;
       return false;
     }, wait);
 }
