@@ -30,6 +30,20 @@
 <script src="https://contextual.media.net/dmedianet.js?cid=8CUP512DM" async="async"></script>
 	</head>
 	<body>
+		<header>
+			<div class="right-align">
+				<a href='https://babble.goolag.app' class="btn linkbtn tooltipped" data-position="bottom" data-tooltip="A new chatting service from Goolag!"><i class="material-icons left">chat</i>Babble</a>
+		</div>
+		<!-- <div class="footer-copyright">
+			<div class="container">
+			Copyright © 2020 Goolag
+			<a class="grey-text text-lighten-4 right modal-trigger" href="#privacyModal"><b>Privacy Policy</b></a>
+			<a class="grey-text text-lighten-4 right modal-trigger" href="#termsModal"><b>Terms of Service</b></a>
+			<a class="grey-text text-lighten-4 right modal-trigger" href="#aupModal"><b>Acceptable Use Policy</b></a>
+			<a class="grey-text text-lighten-4 right modal-trigger" href="#feedbackModal"><b>Feedback</b></a>
+			</div>
+		</div> -->
+		</header>
 		<main>
 <div class="container">
       <div class="center-align">
@@ -46,15 +60,16 @@
             <a href='#' onclick="option3();" class="btn tooltipped" data-position="bottom" data-tooltip="Used as an alternate for Option 2"><i class="material-icons left">link</i>Option 3</a>
 					  <a href='#' onclick="option4();" class="btn tooltipped" data-position="bottom" data-tooltip="Used as an alternate for Option 3"><i class="material-icons left">link</i>Option 4</a>
             <a href='#' onclick="searchIt();" class="btn tooltipped" data-position="bottom" data-tooltip="Used for searching the internet privately. You can also use the 'Anonymous View' option to unblock certain websites"><i class="material-icons left">search</i>Private Search</a>
-						<a href='#' class="btn dropdown-trigger tooltipped" data-position="bottom" data-tooltip="Used if none of the other options work" data-target='otherDropdown'><i class="material-icons left">more_horiz</i> <b>New!</b> Other Options</a>
-          </div>
-        </div>
+						<a href='#' class="btn dropdown-trigger tooltipped" data-position="bottom" data-tooltip="Used if none of the other options work (for advanced users)" data-target='otherDropdown'><i class="material-icons left">more_horiz</i>Other Options</a>
+					</div>
+					</div>
 				<ul id='otherDropdown' class='dropdown-content'>
 			    <li class="divider" tabindex="-1"></li>
-			    <li><a href="#!" onclick="translate();"><i class="material-icons">g_translate</i>Google Translate</a></li>
 					<li><a href="#!" onclick="otherSearchIt();"><i class="material-icons">search</i>Other Search</a></li>
-			    <li><a href="https://www.purevpn.com/order-now.php?aff=44637&amp;a_bid=920607c7"><i class="material-icons">vpn_key</i>Use a VPN!</a></li>
-					<li><a href="https://www.onworks.net/runos/start-os.html?home=init&os=ubuntu-20.04.1-desktop"><i class="material-icons">vpn_key</i>Remote Linux Virtual Machine</a></li>
+			    <li><a href="#!" onclick="translate();"><i class="material-icons">g_translate</i>Google Translate</a></li>
+					<li><a href="https://www.onworks.net/runos/start-os.html?home=init&os=ubuntu-20.04.1-desktop"><i class="material-icons">storage</i>Remote Linux Virtual Machine</a></li>
+					<li><a href="https://repl.it/@catsdgs/Firefox?lite=true#Makefile"><i class="material-icons">web</i>Remote Firefox</a></li>
+					<li><a href="https://www.purevpn.com/order-now.php?aff=44637&amp;a_bid=920607c7"><i class="material-icons">vpn_key</i><b>Use a VPN!</b></a></li>
 			  </ul>
 				<br>
 				<div id="955496125">
@@ -81,7 +96,7 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2020 Goolag
+            Copyright © 2020 Goolag
             <a class="grey-text text-lighten-4 right modal-trigger" href="#privacyModal"><b>Privacy Policy</b></a>
             <a class="grey-text text-lighten-4 right modal-trigger" href="#termsModal"><b>Terms of Service</b></a>
 						<a class="grey-text text-lighten-4 right modal-trigger" href="#aupModal"><b>Acceptable Use Policy</b></a>
@@ -397,9 +412,36 @@
 		<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
 	</div>
 </div>
-
-	<div id="feedbackModal" class="modal modal-fixed-footer">
+	<div id="newContentModal" class="modal modal-fixed-footer">
 	<div class="modal-content">
+		<h2>New Changes</h2>
+		<p>
+			<b>Overall Website</b>
+			<ul class="list">
+					<li>Small design changes</li>
+					<li>New domain (goolag.app)</li>
+			</ul>
+			<b>Other Options</b>
+			<ul class="list">
+					<li>Bug Fixes/Updates to Google Translate option</li>
+					<li>Added Remote Linux Virtual Machine option</li>
+					<li>Added Remote Firefox option</li>
+			</ul>
+			<b>Goolag Babble</b>
+			<ul class="list">
+					<li>Officially Released (although has been up for a while on hangouts.gulag.ga)</li>
+					<li>Small changes</li>
+					<li>Now accessible from <a href="https://babble.goolag.app">babble.goolag.app</a></li>
+			</ul>
+		</p>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+	</div>
+</div>
+
+<div id="feedbackModal" class="modal modal-fixed-footer">
+<div class="modal-content">
 		<h4>Feedback Form</h4>
 		<div class="row">
 	    <form class="col s12" accept-charset="UTF-8" action="https://usebasin.com/f/b68836700b01" enctype="multipart/form-data" method="POST">

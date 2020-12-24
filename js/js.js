@@ -8,7 +8,7 @@ $(document).ready(function(){
     document.getElementById("url").focus();
   }, 200);
   setTimeout(() => {
-     M.toast({html: "<p>Welcome to the new website! All subdomains have also changed, so if you had any bookmarks for specific websites those will no longer work and will have to be changed</p>"})
+     M.toast({html: "<p>Welcome to the new website! All subdomains have also changed, so if you had any bookmarks for specific websites those will no longer work and will have to be changed. Click <a class='modal-trigger' href='#newContentModal'><b>here</b></a> to view all new changes.</p>"})
   }, 1000);
 });
 
@@ -115,7 +115,7 @@ function translate() {
       if (url.substr(0, 4) != "http") {
         url = "http://" + url;
       }
-      window.location.href = 'https://translate.google.ca/translate?sl=auto&tl=en&u=' + url;
+      window.location.href = 'https://translate.google.ca/translate?hl=&sl=en&tl=en&u=' + url + '&anno=2';
       return false;
     }, wait);
 }
