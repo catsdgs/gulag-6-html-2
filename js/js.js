@@ -8,7 +8,7 @@ $(document).ready(function(){
     document.getElementById("url").focus();
   }, 200);
   setTimeout(() => {
-     M.toast({html: "<p>Welcome to the new website! All subdomains have also changed, so if you had any bookmarks for specific websites those will no longer work and will have to be changed. Click <a class='modal-trigger' href='#newContentModal'><b>here</b></a> to view all new changes.</p>"})
+     M.toast({html: "<h6>Welcome to the new website! All subdomains have also changed, so if you had any bookmarks for specific websites those will no longer work and will have to be changed. Click <a class='modal-trigger' href='#newContentModal'><b>here</b></a> to view all new changes.</h6>"})
   }, 1000);
 });
 
