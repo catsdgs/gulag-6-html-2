@@ -22,7 +22,7 @@ $(document).ready(function() {
     M.toast({html: "<p><b>Error: </b>You did not complete the Captcha</p>"});
 
   } else if (urlID.indexOf("url=") >= 0){
-    M.toast({html: '<p><b>Error: </b>You need to select an option and not use enter. In the future, you can to Tab + Enter to unblock quicker.</p>'});
+    M.toast({html: '<p><b>Error: </b>You need to select an option and not use enter. In the future, you can to Tab + Enter to unblock quicker</p>'});
   };
   history.pushState("", document.title, window.location.pathname);
 });
