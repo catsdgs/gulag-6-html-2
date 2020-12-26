@@ -1,7 +1,7 @@
-/*Colors: #fc2605 #05fca2 #FCA205 #16b5f9*/
+/*Colors: #fc2605 #05fca2 #FCA205 #182F56*/
 body {
     /* background: linear-gradient(270deg, #37016b, #fc2605); */
-		background-color: #16b5f9;
+		background-color: #182F56;
     background-size: 100% 100%;
 		font-family: 'Raleway', sans-serif;
 		display: flex;
@@ -99,7 +99,7 @@ body {
 	to   { opacity: 1; }
 }
 .mainInput {
-	color: #333333;
+	color: #000;
 	background-color: #FCA205;
 	margin-top: 1%;
 	animation: 0.4s ease-out 0s 1 slideInFromLeft;
@@ -113,7 +113,7 @@ body {
   }
 }
 .altInput {
-	color: #333333;
+	color: #000;
 	background-color: #FCA205;
 	margin-top: 0%;
 	width: 50%;
@@ -124,41 +124,41 @@ body {
 }
   /* label color */
    .input-field label {
-     color: #333333;
+     color: #000;
    }
    /* label focus color */
    .input-field input[type=text]:focus + label {
-     color: #333333;
+     color: #000;
    }
    /* label underline focus color */
    .input-field input[type=text] {
-     border-bottom: 1px solid #333333;
-     box-shadow: 0 1px 0 0 #333333;
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
    }
    /* valid color */
    .input-field input[type=text].valid {
-     border-bottom: 1px solid #333333;
-     box-shadow: 0 1px 0 0 #333333;
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
    }
    /* invalid color */
    .input-field input[type=text].invalid {
-     border-bottom: 1px solid #333333;
-     box-shadow: 0 1px 0 0 #333333;
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
    }
    /* icon prefix focus color */
    .input-field .prefix.active {
-     color: #333333;
+     color: #000;
    }
 .btn {
 	background-color: #05fca2;
-	color: #333333;
+	color: #000;
 	margin-top: 10px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
 .linkbtn {
 	background-color: rgba(255, 165, 0, 0.0);
-	color: #333333;
+	color: #fff;
 	background-color:transparent;
 	box-shadow: 0 0px 0 0 #333333;
 	font-weight: 500;
@@ -166,7 +166,7 @@ body {
 	text-transform: capitalize;
 }
 .linkbtn:hover {
-	color: #fff;
+	color: #000;
 	background-color: rgba(255, 165, 0, 0.0);
 	box-shadow: 0 0px 0 0 #333333;
 }
@@ -220,7 +220,7 @@ input::-webkit-input-placeholder {
     color: #333333;
 }
 input:focus::-webkit-input-placeholder {
-    color: #fc2605;
+    color: #2cbcae;
 }
 
 /* Firefox < 19 */
@@ -228,7 +228,7 @@ input:-moz-placeholder {
     color: #333333;
 }
 input:focus:-moz-placeholder {
-    color: #fc2605
+    color: #2cbcae
 }
 
 /* Firefox > 19 */
@@ -236,7 +236,7 @@ input::-moz-placeholder {
     color: #333333;
 }
 input:focus::-moz-placeholder {
-    color: #fc2605
+    color: #2cbcae
 }
 
 /* Internet Explorer 10 */
