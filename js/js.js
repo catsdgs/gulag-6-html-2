@@ -16,13 +16,13 @@ $(document).ready(function() {
   const href = window.location.href
   const urlID = href.split('/').reverse()[0]
   if(urlID === '#formSubmitted') {
-    M.toast({html: "<p>Form submitted successfuly</p>"});
+    M.toast({html: "<h5>Form submitted successfuly</h5>"});
 
   } else if (urlID === '#noCaptcha') {
-    M.toast({html: "<p><b>Error: </b>You did not complete the Captcha</p>"});
+    M.toast({html: "<h5><b>Error: </b>You did not complete the Captcha. <i>(err.nocaptcha)</h5>"});
 
   } else if (urlID.indexOf("url=") >= 0){
-    M.toast({html: '<p><b>Error: </b>You need to select an option and not use enter. In the future, you can to Tab + Enter to unblock quicker</p>'});
+    M.toast({html: '<h5><b>Error: </b>You need to select an option and not use enter. In the future, you can to Tab + Enter to unblock quicker. <i>(err.enterkey)</h5>'});
   };
   history.pushState("", document.title, window.location.pathname);
 });
@@ -30,7 +30,7 @@ $(document).ready(function() {
 function option1() {
   var url = document.getElementById('url').value
   if (url === '') {
-  M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+  M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-o1)</i></h5>"})
   } else {
     showFrame();
     setTimeout(() => {
@@ -48,7 +48,7 @@ function option1() {
 function option2() {
   var url = document.getElementById('url').value
   if (url === '') {
-  M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+  M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-o2)</h5>"})
   } else {
     showFrame();
     setTimeout(() => {
@@ -62,7 +62,7 @@ function option2() {
 function option3() {
   var url = document.getElementById('url').value
   if (url === '') {
-    M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+    M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-o3)</h5>"})
   } else {
     showFrame();
     setTimeout(() => {
@@ -76,7 +76,7 @@ function option3() {
 function option4() {
   var url = document.getElementById('url').value
   if (url === '') {
-    M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+    M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-o4)</h5>"})
   } else {
     showFrame();
     setTimeout(() => {
@@ -94,7 +94,7 @@ function option4() {
 function searchIt() {
   var url = document.getElementById('url').value
   if (url === '') {
-    M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+    M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-s1)</h5>"})
   } else {
     showFrame();
     setTimeout(() => {
@@ -108,7 +108,7 @@ function searchIt() {
 function translate() {
   var url = document.getElementById('url').value
   if (url === '') {
-    M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+    M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-t1)</h5>"})
   } else {
     showFrame();
     setTimeout(() => {
@@ -124,7 +124,7 @@ function translate() {
 function otherSearchIt() {
   var url = document.getElementById('url').value
   if (url === '') {
-    M.toast({html: "<p><b>Error: </b>You did not enter anything into the input</p>"})
+    M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-s2)</h5>"})
   } else {
     showFrame();
     setTimeout(() => {
