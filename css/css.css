@@ -247,7 +247,7 @@ input:focus:-ms-input-placeholder {
     color: #fc2605
 }
 .waitTxt {
-	color: #fff;
+	color: #000;
 	text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
 	font-size: 50px;
 }
