@@ -249,7 +249,7 @@ input:focus:-ms-input-placeholder {
 .waitTxt {
 	color: #fff;
 	text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
-	font-size: 40px;
+	font-size: 30px;
 }
 .page-footer {
 	background-color: #333333;
