@@ -29,6 +29,7 @@ $(document).ready(function() {
 
 function option1() {
   var url = document.getElementById('url').value
+  newPopup('https://www.purevpn.com/order-now.php?aff=44637');
   if (url === '') {
   M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-o1)</i></h5>"})
   } else {
@@ -47,6 +48,7 @@ function option1() {
 
 function option2() {
   var url = document.getElementById('url').value
+  newPopup('https://www.purevpn.com/order-now.php?aff=44637');
   if (url === '') {
   M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-o2)</h5>"})
   } else {
@@ -61,6 +63,7 @@ function option2() {
 
 function option3() {
   var url = document.getElementById('url').value
+  newPopup('https://www.purevpn.com/order-now.php?aff=44637');
   if (url === '') {
     M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-o3)</h5>"})
   } else {
@@ -75,6 +78,7 @@ function option3() {
 
 function option4() {
   var url = document.getElementById('url').value
+  newPopup('https://www.purevpn.com/order-now.php?aff=44637');
   if (url === '') {
     M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-o4)</h5>"})
   } else {
@@ -93,6 +97,7 @@ function option4() {
 
 function searchIt() {
   var url = document.getElementById('url').value
+  newPopup('https://www.purevpn.com/order-now.php?aff=44637');
   if (url === '') {
     M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-s1)</h5>"})
   } else {
@@ -107,6 +112,7 @@ function searchIt() {
 
 function translate() {
   var url = document.getElementById('url').value
+  newPopup('https://www.purevpn.com/order-now.php?aff=44637');
   if (url === '') {
     M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-t1)</h5>"})
   } else {
@@ -123,6 +129,7 @@ function translate() {
 
 function otherSearchIt() {
   var url = document.getElementById('url').value
+  newPopup('https://www.purevpn.com/order-now.php?aff=44637');
   if (url === '') {
     M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-s2)</h5>"})
   } else {
@@ -150,6 +157,10 @@ function showFrame() {
     ifrm.style.overflow = "hidden";
     ifrm.style.zIndex = "9999";
     document.body.appendChild(ifrm);
+}
+function newPopup(url) {
+	popupWindow = window.open(
+		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
 }
 
 //
