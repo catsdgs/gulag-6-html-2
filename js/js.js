@@ -1,4 +1,4 @@
-var wait = Math.floor(Math.random() * 12000) + 0;
+var wait = Math.floor(Math.random() * 13000) + 0;
 $(document).ready(function(){
   $('.tooltipped').tooltip();
   $('.modal').modal();
