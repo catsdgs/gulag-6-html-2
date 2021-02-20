@@ -163,13 +163,13 @@ function showFrame() {
     ifrm.style.padding = "0";
     ifrm.style.overflow = "hidden";
     ifrm.style.zIndex = "9999";
+    ifrm.style.border = "none";
     document.body.appendChild(ifrm);
 }
 function newPopup(url) {
 	popupWindow = window.open(
 		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
 }
-
 //
 // function other() {
 //   document.getElementById('mainForm').submit();
