@@ -7,6 +7,7 @@
 		<meta name="keywords" content="proxy,node,network,bypass,games,youtube,unblocked,school,unblock">
 		<meta name="author" content="Goolag">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	 	<META HTTP-EQUIV="Access-Control-Allow-Origin" CONTENT="http://goolag.app">
 		<!--Import Google Icon Font-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--Import materialize.css-->
@@ -27,7 +28,7 @@
     Your browser doesn't support iframes
 </iframe>
 <header>
-<a href='#' onclick="noCloak();" class="btn linkbtnCloak dropdown-trigger tooltipped"; data-position="bottom" data-tooltip="Turns off Cloaking (will refresh page)"><i class="material-icons left">no_encryption</i>Cloak</a>
+<a href='index.html' class="btn linkbtnCloak dropdown-trigger tooltipped"; data-position="bottom" data-tooltip="Turns off Cloaking"><i class="material-icons left">no_encryption</i>Cloak</a>
 </div>
 </header>
 <script
@@ -42,12 +43,6 @@ $(document).ready(function(){
   $('.dropdown-trigger').dropdown();
   $('select').formSelect();
 });
-</script>
-<script>
-function noCloak() {
-  url = document.getElementById("cloakFrame").contentWindow.location.href
-	window.location.href = url;
-}
 </script>
   </body>
 </html>
