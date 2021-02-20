@@ -7,7 +7,6 @@
 		<meta name="keywords" content="proxy,node,network,bypass,games,youtube,unblocked,school,unblock">
 		<meta name="author" content="Goolag">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<meta name="propeller" content="acd7c9d6f66daf6fd3eae4b3965ff387">
 		<!--Import Google Icon Font-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--Import materialize.css-->
@@ -20,17 +19,27 @@
   var userip;
 </script>
 <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
-		<title>Goolag 6.1</title>
+		<title>Goolag 6.2</title>
 		<link rel="shortcut icon" href="favicon.ico">
-		<script type="text/javascript">
-    window._mNHandle = window._mNHandle || {};
-    window._mNHandle.queue = window._mNHandle.queue || [];
-    medianet_versionId = "3121199";
-</script>
 	</head>
 	<body>
 		<header>
 			<div class="right-align">
+				<a href='#' class="btn linkbtn dropdown-trigger tooltipped" data-position="bottom" data-tooltip="Bookmarks that run JavaScript that can do lots of things — even unblock websites!" data-target='bookmarkletsDropdown'><i class="material-icons left">bookmark</i>Bookmarklets</a>
+				<ul id='bookmarkletsDropdown' class='dropdown-content'>
+			    <li class="divider" tabindex="-1"></li>
+					<li><a href="https://www.onworks.net/runos/start-os.html?home=init&os=ubuntu-20.04.1-desktop"><i class="material-icons">storage</i>Remote Linux Virtual Machine</a></li>
+					<li><a href="https://repl.it/@catsdgs/Firefox?lite=true#Makefile"><i class="material-icons">web</i>Remote Firefox</a></li>
+					<li><a href="https://www.purevpn.com/order-now.php?aff=44637&amp;a_bid=920607c7"><i class="material-icons">vpn_key</i><b>Use a VPN!</b></a></li>
+			  </ul>
+				<a href='#' class="btn linkbtn dropdown-trigger tooltipped" data-position="bottom" data-tooltip="More tools that can help unblock or run desktop programs" data-target='toolsDropdown'><i class="material-icons left">more_horiz</i>Advanced Tools</a>
+				<ul id='toolsDropdown' class='dropdown-content'>
+			    <li class="divider" tabindex="-1"></li>
+					<li><a href="https://www.onworks.net/runos/start-os.html?home=init&os=ubuntu-20.04.1-desktop"><i class="material-icons">storage</i>Remote Linux Virtual Machine</a></li>
+					<li><a href="https://repl.it/@catsdgs/Firefox?lite=true#Makefile"><i class="material-icons">web</i>Remote Firefox</a></li>
+					<li><a href="https://www.purevpn.com/order-now.php?aff=44637&amp;a_bid=920607c7"><i class="material-icons">vpn_key</i><b>Use a VPN!</b></a></li>
+			  </ul>
+				<a href='cloak.html' class="btn linkbtn tooltipped" data-position="bottom" data-tooltip="Replaces the title and icon of a website with Google. Note: Doesn't work with Private Search and lots of websites"><i class="material-icons left">enhanced_encryption</i>Cloak</a>
 				<a href='https://babble.goolag.app' class="btn linkbtn tooltipped" data-position="bottom" data-tooltip="A new chatting service from Goolag!"><i class="material-icons left">chat</i>Babble</a>
 		</div>
 		</header>
@@ -38,7 +47,7 @@
 <div class="container">
       <div class="center-align">
         <img alt="Goolag" src="logo.png" class="logoImg" />
-        <h1 class="logoTxt">6.1</h1>
+        <h1 class="logoTxt">6.2</h1>
         <div class="row z-depth-5 mainInput" id="mainInputID">
           <div class="input-field col s12">
 						<form action='#' method='get' id="mainForm">
@@ -49,7 +58,7 @@
             <a href='#' onclick="option2();" class="btn tooltipped" data-position="bottom" data-tooltip="Used as an alternate for Option 1"><i class="material-icons left">link</i>Option 2</a>
             <a href='#' onclick="option3();" class="btn tooltipped" data-position="bottom" data-tooltip="Used as an alternate for Option 2"><i class="material-icons left">link</i>Option 3</a>
 					  <a href='#' onclick="option4();" class="btn tooltipped" data-position="bottom" data-tooltip="Used as an alternate for Option 3"><i class="material-icons left">link</i>Option 4</a>
-            <a href='#' onclick="searchIt();" class="btn tooltipped" data-position="bottom" data-tooltip="Used for searching the internet privately. You can also use the 'Anonymous View' option to unblock certain websites"><i class="material-icons left">search</i>Private Search</a>
+            <a href='#' onclick="searchIt();" class="btn tooltipped" data-position="bottom" data-tooltip="Used for searching the internet privately. You can also use the small mask button in the corner of the right search result to unblock certain websites"><i class="material-icons left">search</i>Private Search</a>
 						<a href='#' class="btn dropdown-trigger tooltipped" data-position="bottom" data-tooltip="Used if none of the other options work (for advanced users)" data-target='otherDropdown'><i class="material-icons left">more_horiz</i>Other Options</a>
 					</div>
 					</div>
@@ -57,8 +66,7 @@
 			    <li class="divider" tabindex="-1"></li>
 					<li><a href="#!" onclick="otherSearchIt();"><i class="material-icons">search</i>Other Search</a></li>
 			    <li><a href="#!" onclick="translate();"><i class="material-icons">g_translate</i>Google Translate</a></li>
-					<li><a href="https://www.onworks.net/runos/start-os.html?home=init&os=ubuntu-20.04.1-desktop"><i class="material-icons">storage</i>Remote Linux Virtual Machine</a></li>
-					<li><a href="https://repl.it/@catsdgs/Firefox?lite=true#Makefile"><i class="material-icons">web</i>Remote Firefox</a></li>
+			    <li><a href="#!" onclick="archive();"><i class="material-icons">archive</i>Web Archive</a></li>
 					<li><a href="https://www.purevpn.com/order-now.php?aff=44637&amp;a_bid=920607c7"><i class="material-icons">vpn_key</i><b>Use a VPN!</b></a></li>
 			  </ul>
 				<br>
