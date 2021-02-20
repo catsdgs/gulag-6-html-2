@@ -177,13 +177,12 @@ body {
 	font-weight: 500;
 	font-size: 1.3rem;
 	text-transform: capitalize;
-	position: fixed;
-	z-index: 9999;
+	position: relative;
 	margin-top: 13px;
-	margin-left: 1644px;
+	margin-left: 8px;
 }
 .linkbtnCloak:hover {
-	color: #fff;
+	color: #000;
 	background-color: green;
 	box-shadow: 0 0px 0 0 #333333;
 }
