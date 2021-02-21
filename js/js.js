@@ -158,7 +158,7 @@ function chrome() {
     setTimeout(() => {
       $('#mainForm').attr('action', 'no-js');
       $('#mainForm').attr('method', 'get');
-      window.location.href= 'https://www.browserling.com/browse/win/7/ie/11/' + url;
+      window.location.href= 'https://www.browserling.com/browse/win/7/chrome/86/' + url;
     }, wait);
 }
 }
