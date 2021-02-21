@@ -29,13 +29,7 @@
 			<a href='cloak.html' class="btn linkbtn tooltipped" data-position="bottom" data-tooltip="Replaces the title and icon of a website with Google. Note: Doesn't work with Private Search and lots of websites"><i class="material-icons left">enhanced_encryption</i>Cloak</a>
 		</div>
 			<div class="right-align">
-				<a href='#' class="btn linkbtn dropdown-trigger tooltipped" data-position="bottom" data-tooltip="Bookmarks that run JavaScript that can do lots of things — even unblock websites!" data-target='bookmarkletsDropdown'><i class="material-icons left">bookmark</i>Bookmarklets</a>
-				<ul id='bookmarkletsDropdown' class='dropdown-content'>
-			    <li class="divider" tabindex="-1"></li>
-					<li><a href="https://www.onworks.net/runos/start-os.html?home=init&os=ubuntu-20.04.1-desktop"><i class="material-icons">storage</i>Remote Linux Virtual Machine</a></li>
-					<li><a href="https://repl.it/@catsdgs/Firefox?lite=true#Makefile"><i class="material-icons">web</i>Remote Firefox</a></li>
-					<li><a href="https://www.purevpn.com/order-now.php?aff=44637&amp;a_bid=920607c7"><i class="material-icons">vpn_key</i><b>Use a VPN!</b></a></li>
-			  </ul>
+				<a class="btn linkbtn tooltipped modal-trigger" href="#bookmarkletsModal" data-position="bottom" data-tooltip="Bookmarks that run JavaScript that can do lots of things — even unblock websites!"><i class="material-icons left">bookmark</i>Bookmarklets</a>
 				<a href='#' class="btn linkbtn dropdown-trigger tooltipped" data-position="bottom" data-tooltip="More tools that can help unblock or run desktop programs" data-target='toolsDropdown'><i class="material-icons left">more_horiz</i>Advanced Tools</a>
 				<ul id='toolsDropdown' class='dropdown-content'>
 			    <li class="divider" tabindex="-1"></li>
@@ -413,8 +407,10 @@
 		<p>
 			<b>Overall Website</b>
 			<ul class="list">
-					<li>Small design changes</li>
+					<li>New loading page</li>
 					<li>New domain (goolag.app)</li>
+					<li>Cloak</li>
+					<li>Bookmarklets</li>
 			</ul>
 			<b>Domain Changes</b>
 			<ul class="list">
@@ -568,7 +564,32 @@ More changes as always to come!
 	</div>
 		    </form>
 </div>
-
+<div id="bookmarkletsModal" class="modal modal-fixed-footer">
+	<div class="modal-content">
+		<h4>Bookmarklets</h4>
+		<h6>Bookmarklets are bookmarks that can run JavaScript. This can be useful for editing a websites content or manipulating it in any way. On this page I have gathered all of my favorite bookmarks. To add one of the bookmarks below, simply drag the button into your bookmarks bar. You will be able to execute it on any website by simply clicking the newly created bookmark. You can also name the bookmark to anything, just don't change the "URL" which is where the source code is.</h6>
+		<br>
+		<a href="javascript:((function(){var a,b,c;c='https://goolag.app',b=document.createElement('iframe'),b.setAttribute('src',c),b.setAttribute('id','rusic-modal'),b.setAttribute('style','position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; z-index: 99999999999; background-color: #fff; border: none;'),a=document.getElementsByTagName('body')[0],a.appendChild(b)})).call(this)" class="btn tooltipped" data-position="bottom" data-tooltip="Drag this into your bookmarks bar">Portable Goolag</a> <label class="modalLbl">Replaces any tab's content (even the new tab page) with Goolag!</label>
+		<br>
+		<a href="javascript:var element = document.getElementById('rusic-modal'); element.parentNode.removeChild(element);" class="btn tooltipped" data-position="bottom" data-tooltip="Drag this into your bookmarks bar">Close Portable Goolag</a> <label class="modalLbl">Reverts to regular tab content</label>
+		<br>
+		<a href="javascript:function gcloak() {var link = document.querySelector(&quot;link[rel*='icon']&quot;) || document.createElement('link');link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';document.title = 'My Drive - Google Drive';console.log(document.title);document.getElementsByTagName('head')[0].appendChild(link) };gcloak();setInterval(gcloak, 1000);" class="btn tooltipped" data-position="bottom" data-tooltip="Drag this into your bookmarks bar">Website Cloaker</a> <label class="modalLbl">Changes any tab's title and icon to Google Drive</label>
+		<br>
+		<a href="javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0" class="btn tooltipped" data-position="bottom" data-tooltip="Drag this into your bookmarks bar">Edit Mode</a> <label class="modalLbl">Allows you to edit the content of any page like a text editor</label>
+		<br>
+		<a href="javascript:document.body.contentEditable = 'false'; document.designMode='off'; void 0" class="btn tooltipped" data-position="bottom" data-tooltip="Drag this into your bookmarks bar">Edit Mode Off</a> <label class="modalLbl">Turns off edit mode</label>
+		<br>
+		<a href="javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())" class="btn tooltipped" data-position="bottom" data-tooltip="Drag this into your bookmarks bar">Inspect Element</a> <label class="modalLbl">Allows you to easily edit any page like an easier version of Inspect Element</label>
+		<br>
+		<a href="javascript:document.querySelectorAll('*').forEach(e=>e.setAttribute('style','background-color:#222;background-image:none;color:#'+(/^A|BU/.test(e.tagName)?'36c;text-decoration:underline;':'eee;')+e.getAttribute('style')))" class="btn tooltipped" data-position="bottom" data-tooltip="Drag this into your bookmarks bar">Dark Mode</a> <label class="modalLbl">Converts any page's content to dark mode (doesn't always work well)</label>
+		<br>
+		<a href='javascript:(function(){function invert(o,t){var r=o.split("("),n=r[1].split(")")[0].split(",");return n.forEach(function(o,r){r<3&&(n[r]="color"==t&&255-parseInt(o)<50?120:255-parseInt(o))}),n=n.join(","),r[0]+"("+n+")"}document.querySelectorAll("*:not([invTouch])").forEach(function(o){var t=window.getComputedStyle(o);o.style.backgroundColor=invert(t.backgroundColor,"back"),o.style.color=invert(t.color,"color"),o.setAttribute("invTouch","true")});})();' class="btn tooltipped" data-position="bottom" data-tooltip="Drag this into your bookmarks bar">Dark Mode Alternate</a> <label class="modalLbl">Converts any page's content to dark mode (doesn't always work well)</label>
+		<br>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-close btn-flat">Close</a>
+	</div>
+</div>
 		<!--JavaScript at end of body for optimized loading-->
     <script
 			  src="https://code.jquery.com/jquery-3.5.1.slim.js"

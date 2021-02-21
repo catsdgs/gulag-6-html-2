@@ -293,3 +293,9 @@ ul.list li{
 .btn-flat{
 	color: #fc2605;
 }
+.modalLbl{
+	padding: 10px;
+	font-size: 18px;
+	color: black;
+	vertical-align: bottom;
+}
