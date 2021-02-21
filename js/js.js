@@ -149,6 +149,20 @@ function archive() {
 }
 }
 
+function chrome() {
+  var url = document.getElementById('url').value
+  if (url === '') {
+    M.toast({html: "<h5><b>Error: </b>You did not enter anything into the input. <i>(err.inputempty-c1)</h5>"})
+  } else {
+    showFrame();
+    setTimeout(() => {
+      $('#mainForm').attr('action', 'no-js');
+      $('#mainForm').attr('method', 'get');
+      window.location.href= 'https://www.browserling.com/browse/win/7/ie/11/' + url;
+    }, wait);
+}
+}
+
 function showFrame() {
     var ifrm = document.createElement("iframe");
     ifrm.setAttribute("src", "submit.html");
