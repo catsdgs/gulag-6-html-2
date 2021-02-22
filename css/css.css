@@ -94,8 +94,6 @@ body {
 		background-color: #182F56;
     background-size: 100% 100%;
 		font-family: raleway, sans-serif;
-		font-size: 1.3rem;
-		line-height: 1.2;
 		display: flex;
 		min-height: 100vh;
 		flex-direction: column;
