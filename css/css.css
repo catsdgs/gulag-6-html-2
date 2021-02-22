@@ -93,7 +93,10 @@ body {
     /* background: linear-gradient(270deg, #37016b, #fc2605); */
 		background-color: #182F56;
     background-size: 100% 100%;
-		font-family: 'Raleway', sans-serif;
+		font-family: raleway, sans-serif;
+		font-weight: 400;
+		font-size: 1.3rem;
+		line-height: 1.2;
 		display: flex;
 		min-height: 100vh;
 		flex-direction: column;
